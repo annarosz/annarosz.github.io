@@ -13,10 +13,10 @@
   padding-bottom: 20px;
 }
 
-.header h1:hover {
+/* .header h1:hover {
   color: #1FF7AA;
   transition: color 1000ms
-}
+} */
 
 h1 {
   color: black;
@@ -460,6 +460,21 @@ footer {
       black 5px,
       black 14px);
     );
+  }
+
+  .header-about:focus {
+    background-color: rgb(5, 218, 168);
+    transition: background-color 500ms;
+  }
+
+  .header-work:focus {
+    background-color: rgb(101, 189, 57);
+    transition: background-color 500ms;
+  }
+
+  .header-say-hi:active {
+    background-color: #E3F41D;
+    transition: background-color 500ms;
   }
 
   .section-about {
