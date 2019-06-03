@@ -1,0 +1,410 @@
+@import 'buttons.css';
+
+:root {
+  --green: rgb(101, 189, 57);
+  --citrus: #E3F41D;
+  --teal: rgb(5, 218, 168);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Type styles –––––––––––––––––––––––––––––––––––– */
+
+.header h1 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 32pt;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 32pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
+.header h2 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 12pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+h3 {
+  color:black;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 13pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 25px 0;
+}
+
+p {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 13pt;
+  line-height: 18pt;
+  margin-bottom: 15px;
+}
+
+em {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 10pt;
+  line-height: 12pt;
+}
+
+/* Above the fold –––––––––––––––––––––––––––––––––––– */
+
+.above-fold {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: repeating-linear-gradient( 
+    45deg,
+    transparent 0px,
+    transparent 5px,
+    black 5px,
+    black 14px);
+}
+
+.header-about:hover {
+  background-color: var(--teal);
+  transition: background-color 500ms;
+}
+
+.header-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background: repeating-linear-gradient( 
+    45deg,
+    transparent 0px,
+    transparent 5px,
+    black 5px,
+    black 14px);
+}
+
+.header-projects:hover {
+  background-color: var(--green);
+  transition: background-color 500ms;
+}
+
+.header-say-hi {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: repeating-linear-gradient( 
+    135deg,
+    transparent 0px,
+    transparent 5px,
+    black 5px,
+    black 14px);
+}
+
+.header-say-hi:hover {
+  background-color: var(--citrus);
+  transition: background-color 500ms;
+}
+
+/* Below the fold –––––––––––––––––––––––––––––––––––– */
+
+.below-fold {
+  margin: auto;
+  max-width: 900px;
+}
+
+/* About section –––––––––––––––––––––––––––––––––––– */
+
+.section-about {
+  padding-top: 100px;
+}
+
+.graphic-container {
+  display: flex;
+}
+
+.graphic-development {
+  padding-left: 70px;
+}
+
+i {
+  color: black;
+  font-size: 26pt;
+  letter-spacing: 15px;
+}
+
+.button-spacer {
+  height: 125px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Projects section –––––––––––––––––––––––––––––––––––– */
+
+.section-projects {
+  padding-top: 100px; 
+}
+
+.projects-container {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-gap: 1em;
+}
+
+.project-1 {
+  background-image: url(https://raw.githubusercontent.com/annarosz/temp/master/OZPICS-hero4.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-2 {
+  background-image: url("https://raw.githubusercontent.com/annarosz/annarosz.github.io/master/P6250010_grey.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-3 {
+  background-image: url("https://raw.githubusercontent.com/annarosz/annarosz.github.io/master/lgfig3_grey.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-4 {
+  background-image: url("https://raw.githubusercontent.com/annarosz/annarosz.github.io/master/purple_grey.jpg");
+  /* background-color: red;
+  background-blend-mode: multiply; */
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project:hover {
+  background:linear-gradient(rgba(101, 189, 57, 1), rgba(101, 189, 57, 1));
+  height: 100px;
+  background-blend-mode: multiply;
+}
+
+.project-1 a {
+  visibility: hidden;
+}
+
+.project-1:hover a {
+  color:white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  visibility: visible;
+}
+
+.project-2 a {
+  visibility: hidden;
+}
+
+.project-2:hover a {
+  color:white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  visibility: visible;
+}
+
+.project-3 a {
+  visibility: hidden;
+}
+
+.project-3:hover a {
+  color:white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  visibility: visible;
+}
+
+.project-4 a {
+  visibility: hidden;
+}
+
+.project-4:hover a {
+  color:white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  visibility: visible;
+}
+
+/* Say Hi section –––––––––––––––––––––––––––––––––––– */
+
+.section-say-hi {
+  padding-top: 100px;  
+}
+
+/* Footer –––––––––––––––––––––––––––––––––––– */
+
+footer {
+  height: 125px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom {
+  height: 800px;
+  background: repeating-linear-gradient( 
+    135deg,
+    transparent 0px,
+    transparent 5px,
+    black 5px,
+    black 14px);
+}
+
+/* Media queries –––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 768px) {
+
+  .above-fold {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .header-about {
+    background: repeating-linear-gradient( 
+      135deg,
+      transparent 0px,
+      transparent 5px,
+      black 5px,
+      black 14px);
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .button-spacer {
+    height: 125px;
+    border-bottom: 0.5px solid black;
+  }
+
+  .header-about {
+    background-color: var(--teal);
+  }
+
+  .header-projects {
+    background-color: var(--green);
+  }
+
+  .header-say-hi {
+    background-color: var(--citrus);
+  }
+
+  .below-fold {
+    width: 80vw;
+  }
+
+  .section-about {
+    padding-top: 70px;  
+  }
+
+  .graphic-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .graphic-development {
+    padding-left: 0px;
+  }
+
+  .section-projects {
+    padding-top: 70px; 
+  }
+
+  .section-say-hi {
+    padding-top: 70px;  
+  }
+
+  .bottom {
+    height: 500px;
+  }
