@@ -63,6 +63,16 @@ h3 {
   margin: 25px 0;
 }
 
+h3.white {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 13pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 p {
   color: black;
   font-family: 'Lato', sans-serif;
@@ -149,8 +159,10 @@ em {
 /* Below the fold –––––––––––––––––––––––––––––––––––– */
 
 .below-fold {
+  /* background-color: lightblue; */
   margin: auto;
   max-width: 900px;
+  padding: 0px 20px;
 }
 
 /* About section –––––––––––––––––––––––––––––––––––– */
@@ -191,7 +203,6 @@ i {
 }
 
 .projects-container {
-  background-color: lightgray;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(4, 1fr); */
@@ -210,9 +221,7 @@ i {
 }
 
 .project-2 {
-  background-image: url("https://raw.githubusercontent.com/annarosz/annarosz.github.io/master/P6250010_grey.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #939598;
   min-height: 250px;
   display: flex;
   justify-content: center;
@@ -221,9 +230,7 @@ i {
 }
 
 .project-3 {
-  background-image: url("https://raw.githubusercontent.com/annarosz/annarosz.github.io/master/lgfig3_grey.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #939598;
   min-height: 250px;
   display: flex;
   justify-content: center;
@@ -232,11 +239,8 @@ i {
 }
 
 .project-4 {
-  background-image: url("https://raw.githubusercontent.com/annarosz/annarosz.github.io/master/purple_grey.jpg");
-  /* background-color: red;
-  background-blend-mode: multiply; */
-  background-size: cover;
-  background-position: center;
+  background-color: #939598;
+  background-blend-mode: multiply;
   min-height: 250px;
   display: flex;
   justify-content: center;
@@ -378,10 +382,6 @@ footer {
 
   .header-say-hi {
     background-color: var(--citrus);
-  }
-
-  .below-fold {
-    width: 80vw;
   }
 
   .section-about {
