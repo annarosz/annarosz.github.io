@@ -50,7 +50,7 @@ a {
   
   .button-black:hover {
     background-color: rgb(5, 218, 168);
-    transition: background-color 500ms ease-in-out;
+    transition: background-color 150ms ease-in-out;
   }
 
   
