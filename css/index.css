@@ -200,8 +200,7 @@ i {
 }
 
 .project-1-top {
-  height: 90%;
-  width: 100%;
+  height: 260px;
   background-image: url(https://raw.githubusercontent.com/annarosz/temp/master/OZPICS-hero4.png);
   background-size: cover;
   background-position: center;
@@ -217,14 +216,14 @@ i {
 /* –––––––––––––––– */
 
 .project-2 {
+  /* background-color: yellowgreen; */
   min-height: 280px;
   display: flex;
   flex-direction: column;
 }
 
 .project-2-top {
-  height: 90%;
-  width: 100%;
+  height: 260px;
   background-color: #939598;
 
 }
@@ -239,14 +238,14 @@ i {
 /* –––––––––––––––– */
 
 .project-3 {
+  /* background-color: orange; */
   min-height: 280px;
   display: flex;
   flex-direction: column;
 }
 
 .project-3-top {
-  height: 90%;
-  width: 100%;
+  height: 260px;
   background-color: #939598;
 }
 
@@ -260,14 +259,14 @@ i {
 /* –––––––––––––––– */
 
 .project-4 {
+  /* background-color: lightsalmon; */
   min-height: 280px;
   display: flex;
   flex-direction: column;
 }
 
 .project-4-top {
-  height: 90%;
-  width: 100%;
+  height: 260px;
   background-color: #939598;
 }
 
