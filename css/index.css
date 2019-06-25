@@ -224,8 +224,9 @@ i {
 
 .project-2-top {
   height: 260px;
-  background-color: #939598;
-
+  background-image: url(https://raw.githubusercontent.com/annarosz/magic8ball/master/universe_home.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .project-2-bottom {
