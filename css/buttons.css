@@ -71,7 +71,6 @@ i:hover {
 }
 
 .button-black:hover,
-.button-black:active,
 .button-black:hover:focus {
   background-color: var(--teal);
   transition: background-color 200ms ease-in-out;
