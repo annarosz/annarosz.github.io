@@ -182,7 +182,7 @@ p.spaced-double {
 
 .project-1-top {
   height: 280px;
-  min-width: 400px;
+  width: 50%;
   background-image: url(https://raw.githubusercontent.com/annarosz/temp/master/fb_crop.gif);
   background-size: cover;
   background-position: center;
@@ -191,6 +191,7 @@ p.spaced-double {
 
 .project-1-bottom {
   padding-top: 20px;
+  width: 50%;
 }
 
 footer {
@@ -215,7 +216,7 @@ footer {
 
 /* Media queries –––––––––––––––––––––––––––––––––––– */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .header h1 {
     font-size: 28pt;
   }
@@ -261,8 +262,17 @@ footer {
     padding-bottom: 70px;
   }
 
-  .project-1 {
+  .project {
     flex-direction: column;
+  }
+
+  .project-1-top {
+    width: 100%;
+  }
+
+  .project-1-bottom {
+    padding-top: 20px;
+    width: 100%;
   }
 
   footer {
