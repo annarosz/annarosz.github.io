@@ -183,7 +183,7 @@ p.spaced-double {
 .project-1-top {
   height: 280px;
   width: 50%;
-  background-image: url(https://raw.githubusercontent.com/annarosz/temp/master/fb_crop.gif);
+  background-image: url(https://raw.githubusercontent.com/annarosz/temp/master/fb_crop2.gif);
   background-size: cover;
   background-position: center;
   margin-right: 30px;
@@ -198,9 +198,6 @@ footer {
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
-  /* flex-direction: row;
-  align-items: center;
-  justify-content: space-between; */
 }
 
 .bottom {
@@ -267,13 +264,13 @@ footer {
   }
 
   .project-1-top {
+    height: 230px;
     width: 100%;
   }
 
   .project-1-bottom {
     padding-top: 20px;
     width: 100%;
-    background-color: yellow;
   }
 
   footer {
