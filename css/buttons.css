@@ -1,56 +1,78 @@
 a {
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 16pt;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+}
+
+.dark {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 13pt;
+  line-height: 22pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+i {
+  color: black;
+  font-size: 18pt;
+  margin-right: 10px;
+}
+
+i:hover {
+  color: var(--teal);
+  transition: background-color 200ms ease-in-out;
+}
 
 .button-white {
-    width: 200px;
-    height: 50px;
-    background-color: white;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .button-white a {
-    color: black;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 16pt;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  
-  .button-black {
-    width: 150px;
-    height: 40px;
-    background-color: black;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .button-black a {
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 12pt;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  
-  .button-black:hover {
-    background-color: rgb(5, 218, 168);
-    transition: background-color 150ms ease-in-out;
-  }
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  
+.button-white a {
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 16pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-black {
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-black a {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 12pt;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-black:hover,
+.button-black:active,
+.button-black:hover:focus {
+  background-color: var(--teal);
+  transition: background-color 200ms ease-in-out;
+}

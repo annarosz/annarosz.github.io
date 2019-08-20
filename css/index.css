@@ -1,8 +1,8 @@
-@import 'buttons.css';
+@import "buttons.css";
 
 :root {
   --green: rgb(101, 189, 57);
-  --citrus: #E3F41D;
+  --citrus: #e3f41d;
   --teal: rgb(5, 218, 168);
 }
 
@@ -15,7 +15,7 @@
 
 .header h1 {
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 32pt;
   text-align: center;
@@ -26,7 +26,7 @@
 
 h1 {
   color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 32pt;
   letter-spacing: 0.04em;
@@ -36,7 +36,7 @@ h1 {
 
 .header h2 {
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14pt;
   letter-spacing: 0.1em;
@@ -46,7 +46,7 @@ h1 {
 
 h3 {
   color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 13pt;
   line-height: 22pt;
@@ -56,27 +56,26 @@ h3 {
 
 p {
   color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 13pt;
   line-height: 18pt;
 }
 
 p.spaced {
   color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 13pt;
   line-height: 18pt;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 p.spaced-double {
   color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 13pt;
   line-height: 18pt;
   padding-bottom: 30px;
 }
-
 
 /* Above the fold –––––––––––––––––––––––––––––––––––– */
 
@@ -99,240 +98,147 @@ p.spaced-double {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: repeating-linear-gradient( 
+  background: repeating-linear-gradient(
     45deg,
     transparent 0px,
     transparent 5px,
     black 5px,
-    black 14px);
+    black 10px
+  );
 }
 
 .header-about:hover {
   background-color: var(--teal);
-  transition: background-color 500ms;
+  transition: background-color 200ms ease-in-out;
 }
 
 .header-projects {
   display: flex;
   justify-content: center;
   align-items: center;
-    background: repeating-linear-gradient( 
+  background: repeating-linear-gradient(
     45deg,
     transparent 0px,
     transparent 5px,
     black 5px,
-    black 14px);
+    black 10px
+  );
 }
 
 .header-projects:hover {
   background-color: var(--green);
-  transition: background-color 250ms;
+  transition: background-color 200ms ease-in-out;
 }
 
-.header-say-hi {  
+.header-say-hi {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: repeating-linear-gradient( 
+  background: repeating-linear-gradient(
     135deg,
     transparent 0px,
     transparent 5px,
     black 5px,
-    black 14px);
+    black 10px
+  );
 }
 
 .header-say-hi:hover {
   background-color: var(--citrus);
-  transition: background-color 500ms;
+  transition: background-color 200ms ease-in-out;
 }
 
 /* Below the fold –––––––––––––––––––––––––––––––––––– */
 
 .below-fold {
   margin: auto;
-  max-width: 900px;
+  max-width: 800px;
   padding: 0px 30px;
 }
 
-/* About section –––––––––––––––––––––––––––––––––––– */
-
-.section-about {
+.section {
   padding-top: 100px;
 }
 
 .button-spacer {
-  height: 125px;
   margin: 0 auto;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/* Projects section –––––––––––––––––––––––––––––––––––– */
-
-.section-projects {
-  padding-top: 100px; 
-}
-
-i {
-  color: black;
-  font-size: 24pt;
-  width: 33px;
-  height: 33px;
-}
-
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2em;
+  /* background-color: pink; */
 }
 
 /* –––––––––––––––– */
 
-.project-1 {
+.project {
   /* background-color: pink; */
   min-height: 280px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .project-1-top {
-  height: 260px;
-  background-image: url(https://raw.githubusercontent.com/annarosz/temp/master/OZPICS-hero4.png);
+  height: 280px;
+  min-width: 400px;
+  background-image: url(https://raw.githubusercontent.com/annarosz/temp/master/fb_crop.gif);
   background-size: cover;
   background-position: center;
+  margin-right: 30px;
 }
 
 .project-1-bottom {
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 20px;
 }
-
-/* –––––––––––––––– */
-
-.project-2 {
-  /* background-color: yellowgreen; */
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-2-top {
-  height: 260px;
-  background-image: url(https://raw.githubusercontent.com/annarosz/magic8ball/master/universe_home.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.project-2-bottom {
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* –––––––––––––––– */
-
-.project-3 {
-  /* background-color: orange; */
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-3-top {
-  height: 260px;
-  background-color: #939598;
-}
-
-.project-3-bottom {
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* –––––––––––––––– */
-
-.project-4 {
-  /* background-color: lightsalmon; */
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-4-top {
-  height: 260px;
-  background-color: #939598;
-}
-
-.project-4-bottom {
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Say Hi section –––––––––––––––––––––––––––––––––––– */
-
-.section-say-hi {
-  padding-top: 100px;  
-}
-
-/* Footer –––––––––––––––––––––––––––––––––––– */
 
 footer {
-  height: 125px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
+  /* flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .bottom {
-  height: 800px;
-  background: repeating-linear-gradient( 
+  height: 300px;
+  background: repeating-linear-gradient(
     135deg,
     transparent 0px,
     transparent 5px,
     black 5px,
-    black 14px);
+    black 10px
+  );
 }
 
 /* Media queries –––––––––––––––––––––––––––––––––––– */
 
 @media only screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 28pt;
+  }
+
+  h1 {
+    font-size: 28pt;
+  }
 
   .above-fold {
-    height: 100vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
 
   .header-about {
-    background: repeating-linear-gradient( 
+    background: repeating-linear-gradient(
       135deg,
       transparent 0px,
       transparent 5px,
       black 5px,
-      black 14px);
-  }
-
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .button-spacer {
-    height: 125px;
-    border-bottom: 0.5px solid black;
+      black 10px
+    );
   }
 
   .header-about {
@@ -347,18 +253,20 @@ footer {
     background-color: var(--citrus);
   }
 
-  .section-about {
-    padding-top: 70px;  
+  .section {
+    padding-top: 70px;
   }
 
-  .section-projects {
-    padding-top: 70px; 
+  .button-spacer {
+    padding-bottom: 70px;
   }
 
-  .section-say-hi {
-    padding-top: 70px;  
+  .project-1 {
+    flex-direction: column;
   }
 
-  .bottom {
-    height: 300px;
+  footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
+}
