@@ -7,7 +7,11 @@
     <title>Anna Roszko</title>
     <link rel="stylesheet" href="css/index.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700,900"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,95 +24,67 @@
   </head>
 
   <body>
-    <div class="above-fold">
-      <div id="home" class="header">
-        <h1>Anna Roszko</h1>
-        <h2>Visual Design</h2>
-        <h2>Web Development</h2>
-      </div>
-      <div class="header-about">
-        <div class="button-white">
-          <a href="#about">About</a>
-        </div>
-      </div>
-      <div class="header-projects">
-        <div class="button-white">
-          <a href="#projects">Projects</a>
-        </div>
-      </div>
-      <div class="header-say-hi">
-        <div class="button-white">
-          <a href="#say-hi">Say hi</a>
+    <div class="container">
+      <div class="floating-container">
+        <div class="main">
+          <div id="home" class="button-container">
+            <a href="#projects">Projects</a>
+            <a href="#say-hi">Say Hi</a>
+          </div>
+          <div class="intro-section">
+            <h1>Hello!</h1>
+            <h3>
+              I’m Anna Roszko, an experienced graphic designer who’s recently
+              added web development to my skill set. I’m passionate about how
+              design and development work together to make digital products and
+              experiences that have the capacity to enhance people’s lives.
+            </h3>
+            <h3>
+              I’m currently looking for a new opportunity so if you're on the
+              hunt for a developer with an eye for design, I'd love to hear from
+              you.
+            </h3>
+          </div>
+
+          <div id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project">
+              <div class="project-1-left"></div>
+              <div class="project-1-right">
+                <h4>FlavourBuddy</h4>
+                <p>
+                  An ingredient pairing app that encourages creative cooking and
+                  reducing food waste.
+                </p>
+                <p><strong>Tech Stack:</strong></p>
+                <p>MongoDB / Express / React / Node</p>
+                <div class="button-spacer">
+                  <a href="https://flavourbuddy.netlify.com/">View Project</a>
+                  <a href="https://github.com/annarosz">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="say-hi" class="section">
+            <h2>Say Hi</h2>
+            <h4>
+              If you'd like to have a chat, feel free to get in touch...
+            </h4>
+            <div class="button-spacer">
+              <a href="mailto:roszko.anna@gmail.com?subject=Hi!">Email</a>
+              <a href="https://www.linkedin.com/in/anna-roszko-40807450/"
+                >Linkedin</a
+              >
+            </div>
+          </div>
+
+          <footer>
+            <h3>Thanks for visiting!</h3>
+            <a class="icon" href="#home"><i class="fas fa-arrow-up"></i></a>
+          </footer>
         </div>
       </div>
     </div>
-
-    <div class="below-fold">
-      <div id="about" class="section">
-        <h1>About</h1>
-        <p class="spaced-double">
-          Hi, I’m Anna, an experienced graphic designer and visual artist who’s
-          recently added web development to my skill set. I’m passionate about
-          how design and development work together to make digital products and
-          experiences that have the capacity to enhance people’s lives.
-        </p>
-        <h3>Design software</h3>
-        <p class="spaced">
-          Figma / Sketch / Photoshop / Illustrator / InDesign
-        </p>
-        <h3>Development tools</h3>
-        <p>HTML / CSS / Ruby / JavaScript / MongoDB / Express / React / Node</p>
-
-        <div class="button-spacer">
-          <div class="button-black">
-            <a href="https://www.linkedin.com/in/anna-roszko-40807450/"
-              >Linkedin</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div id="projects" class="section">
-        <h1>Projects</h1>
-        <div class="project">
-          <div class="project-1-top"></div>
-          <div class="project-1-bottom">
-            <p class="spaced">
-              FlavourBuddy is an ingredient pairing app that encourages creative
-              cooking, and reducing food waste.
-            </p>
-            <p><strong>Tech stack:</strong></p>
-            <p>MongoDB / Express / React / Node</p>
-            <br />
-            <a class="dark" href="https://flavourbuddy.netlify.com/"
-              ><i class="fas fa-plus"></i>View Project</a
-            >
-          </div>
-        </div>
-
-        <div class="button-spacer">
-          <div class="button-black">
-            <a href="https://github.com/annarosz">Github</a>
-          </div>
-        </div>
-      </div>
-
-      <div id="say-hi" class="section">
-        <h1>Say hi</h1>
-        <p>If you'd like to get in touch, please send me an email...</p>
-        <div class="button-spacer">
-          <div class="button-black">
-            <a href="mailto:roszko.anna@gmail.com?subject=Hi!">Email</a>
-          </div>
-        </div>
-      </div>
-
-      <footer>
-        <a href="#home"><i class="fas fa-arrow-up"></i></a>
-        <h3>Thanks for visiting!</h3>
-      </footer>
-    </div>
-
-    <div class="bottom"></div>
   </body>
 </html>
