@@ -8,12 +8,6 @@
   --hero2: rgb(255, 165, 0);
 }
 
-/* html {
-  background: linear-gradient(rgba(216, 204, 192), rgb(88, 88, 196)) no-repeat
-    center center fixed;
-  height: 100vh;
-} */
-
 html::before {
   content: " ";
   display: block;
@@ -34,15 +28,6 @@ html::before {
 
 @font-face {
   font-family: "yonkyblack";
-  src: url(https://raw.githubusercontent.com/annarosz/temp/master/yonky-black-webfont.woff)
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-  unicode-range: U+0020-007F;
-}
-
-@font-face {
-  font-family: "yonkyblack";
   src: url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black-webfont.woff2)
       format("woff2") /* Super Modern Browsers */,
     url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black-webfont.woff)
@@ -53,33 +38,6 @@ html::before {
   font-style: normal;
   unicode-range: U+0020-007F;
 }
-
-/* .hello {
-  font-family: "Noto Serif JP", serif;
-  background-color: greenyellow;
-  font-weight: 900;
-  font-size: 4.5em;
-  padding: 120px 0px;
-  -webkit-animation: colorchange 15s infinite alternate;
-}
-
-@-webkit-keyframes colorchange {
-  0% {
-    color: #7fbe6c;
-  }
-  25% {
-    color: rgb(5, 218, 168);
-  }
-  50% {
-    color: #47c3e2;
-  }
-  75% {
-    color: #9783cf;
-  }
-  100% {
-    color: gray;
-  }
-} */
 
 h1 {
   font-family: "yonkyblack", sans-serif;
@@ -115,10 +73,6 @@ h4 {
   padding-bottom: 1em;
 }
 
-.right-align {
-  text-align: right;
-}
-
 p {
   color: black;
   font-family: "Lato", sans-serif;
@@ -141,7 +95,6 @@ a {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 0.8em;
-  line-height: 3em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-decoration: none;
@@ -240,10 +193,6 @@ footer {
   margin-right: 30px;
 }
 
-/* .project-1-right {
-  width: 50%;
-} */
-
 /* Media queries –––––––––––––––––––––––––––––––––––– */
 
 @media only screen and (max-width: 1200px) {
@@ -275,12 +224,12 @@ footer {
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 3.3em;
     padding-bottom: 0.75em;
   }
 
   h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .floating-container {
@@ -298,7 +247,7 @@ footer {
   }
 
   .project-1-left {
-    min-height: 200px;
+    min-height: 300px;
     min-width: 200px;
   }
 
