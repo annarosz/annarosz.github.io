@@ -25,6 +25,19 @@ html {
   unicode-range: U+0020-007F;
 }
 
+@font-face {
+  font-family: "yonkyblack";
+  src: url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black-webfont.woff2)
+      format("woff2") /* Super Modern Browsers */,
+    url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black-webfont.woff)
+      format("woff") /* Pretty Modern Browsers */,
+    url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black.ttf)
+      format("truetype") /* Safari, Android, iOS */;
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0020-007F;
+}
+
 /* .hello {
   font-family: "Noto Serif JP", serif;
   background-color: greenyellow;
@@ -205,7 +218,7 @@ footer {
 .project-1-left {
   min-height: 500px;
   min-width: 500px;
-  background-image: url(https://raw.githubusercontent.com/annarosz/temp/master/fb_illustration_square.gif);
+  background-image: url(https://raw.githubusercontent.com/annarosz/portfolio/master/fb_illustration_square.gif);
   background-size: cover;
   background-position: center;
   margin-right: 30px;
