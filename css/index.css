@@ -152,13 +152,6 @@ a:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: repeating-linear-gradient(
-    135deg,
-    transparent 0px,
-    transparent 10px,
-    rgb(229, 161, 129) 10px,
-    rgb(229, 161, 129) 12px
-  ); */
 }
 
 .floating-container {
