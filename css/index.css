@@ -4,14 +4,26 @@
 }
 
 :root {
-  --hero1: #61bb29;
+  --hero1: #a39ebf;
+  --hero2: rgb(255, 165, 0);
 }
 
-body {
-  background: linear-gradient(rgba(216, 204, 192), rgba(229, 161, 129));
+html {
+  background: linear-gradient(rgba(216, 204, 192), rgb(88, 88, 196)) no-repeat
+    center center fixed;
+  height: 100vh;
 }
 
 /* Type styles –––––––––––––––––––––––––––––––––––– */
+
+@font-face {
+  font-family: "yonkyblack";
+  src: url(https://raw.githubusercontent.com/annarosz/temp/master/yonky-black-webfont.woff)
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0020-007F;
+}
 
 /* .hello {
   font-family: "Noto Serif JP", serif;
@@ -41,17 +53,19 @@ body {
 } */
 
 h1 {
-  color: var(--hero1);
-  font-weight: 900;
-  font-size: 6em;
+  font-family: "yonkyblack", sans-serif;
+  color: var(--hero2);
+  font-size: 6.5em;
   padding-top: 1.5em;
   padding-bottom: 0.75em;
 }
 
 h2 {
+  font-family: "yonkyblack", sans-serif;
   color: var(--hero1);
   font-weight: 900;
-  font-size: 3em;
+  font-size: 4em;
+  letter-spacing: 0.01em;
   padding-bottom: 1em;
 }
 
@@ -59,7 +73,7 @@ h3 {
   color: black;
   font-family: "Noto Serif JP", serif;
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.7em;
   padding-bottom: 1em;
 }
 
@@ -67,9 +81,13 @@ h4 {
   color: black;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.5em;
   padding-bottom: 1em;
+}
+
+.right-align {
+  text-align: right;
 }
 
 p {
@@ -81,6 +99,12 @@ p {
   padding-bottom: 1em;
 }
 
+.bold {
+  font-weight: 700;
+  line-height: 0em;
+  margin-top: 0.5em;
+}
+
 /* Link styles –––––––––––––––––––––––––––––––––––– */
 
 a {
@@ -88,6 +112,7 @@ a {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 0.8em;
+  line-height: 3em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-decoration: none;
@@ -101,15 +126,14 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: var(--hero1);
-  transition: background-color 500ms ease-in-out;
+  color: var(--hero2);
+  transition: color 50ms ease-in-out;
   border-bottom: 2px dashed currentColor;
 }
 
 .icon {
   border-bottom: none;
   padding-bottom: none;
-  color: black;
   font-size: 2em;
   margin-left: 1em;
   padding-bottom: 1em;
@@ -128,6 +152,13 @@ a:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background: repeating-linear-gradient(
+    135deg,
+    transparent 0px,
+    transparent 10px,
+    rgb(229, 161, 129) 10px,
+    rgb(229, 161, 129) 12px
+  ); */
 }
 
 .floating-container {
@@ -145,7 +176,7 @@ a:focus {
 }
 
 .intro-section {
-  min-height: 70vh;
+  min-height: 65vh;
 }
 
 .button-container {
@@ -158,7 +189,7 @@ a:focus {
 
 .section {
   border: 2px var(--hero1) solid;
-  padding: 10%;
+  padding: 5%;
   margin-top: 6em;
 }
 
@@ -179,17 +210,17 @@ footer {
 }
 
 .project-1-left {
-  min-height: 300px;
-  min-width: 300px;
+  min-height: 500px;
+  min-width: 500px;
   background-image: url(https://raw.githubusercontent.com/annarosz/temp/master/fb_illustration_square.gif);
   background-size: cover;
   background-position: center;
   margin-right: 30px;
 }
 
-.project-1-right {
+/* .project-1-right {
   width: 50%;
-}
+} */
 
 /* Media queries –––––––––––––––––––––––––––––––––––– */
 
@@ -221,6 +252,11 @@ footer {
     font-size: 5em;
   }
 
+  h2 {
+    font-size: 3em;
+    padding-bottom: 0.75em;
+  }
+
   h3 {
     font-size: 1.2em;
   }
@@ -234,13 +270,18 @@ footer {
   }
 
   .section {
-    padding: 8% 8% 3em 8%;
-    margin-top: 4em;
+    border: none;
+    padding: none;
+    margin-top: 5em;
   }
 
   .project-1-left {
     min-height: 200px;
     min-width: 200px;
+  }
+
+  .button-spacer {
+    margin-top: 1em;
   }
 
   footer {
