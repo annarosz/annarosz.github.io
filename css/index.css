@@ -8,10 +8,26 @@
   --hero2: rgb(255, 165, 0);
 }
 
-html {
+/* html {
   background: linear-gradient(rgba(216, 204, 192), rgb(88, 88, 196)) no-repeat
     center center fixed;
   height: 100vh;
+} */
+
+html::before {
+  content: " ";
+  display: block;
+  background: linear-gradient(rgba(216, 204, 192), rgb(88, 88, 196));
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -10;
 }
 
 /* Type styles –––––––––––––––––––––––––––––––––––– */
@@ -277,7 +293,7 @@ footer {
 
   .section {
     border: none;
-    padding: none;
+    padding: 0em;
     margin-top: 5em;
   }
 
