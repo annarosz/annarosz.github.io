@@ -160,6 +160,7 @@ a:focus {
 
 .button-spacer {
   margin-top: 2em;
+  display: flex;
 }
 
 .section {
@@ -195,6 +196,13 @@ footer {
 
 /* Media queries –––––––––––––––––––––––––––––––––––– */
 
+@media only screen and (max-width: 1400px) {
+  .project-1-left {
+    min-height: 380px;
+    min-width: 60%;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .project {
     flex-direction: column;
@@ -202,11 +210,13 @@ footer {
 
   .project-1-left {
     min-height: 400px;
+    min-width: 300px;
+    margin-right: 0em;
   }
 
   .project-1-right {
     padding-top: 2em;
-    width: 100%;
+    min-width: 100%;
   }
 
   .section {
@@ -220,7 +230,8 @@ footer {
   }
 
   .project-1-left {
-    min-height: 350px;
+    min-height: 400px;
+    min-width: 300px;
   }
 }
 
@@ -264,7 +275,7 @@ footer {
   }
 
   footer {
-    padding-top: 2em;
+    padding-top: 5em;
     padding-bottom: 0em;
   }
 }
