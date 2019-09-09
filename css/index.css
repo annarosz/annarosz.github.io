@@ -11,7 +11,7 @@
 html::before {
   content: " ";
   display: block;
-  background: linear-gradient(rgba(216, 204, 192), rgb(88, 88, 196));
+  background: linear-gradient(rgba(216, 204, 192), rgb(109, 118, 190));
   background-position: center;
   background-size: cover;
   height: 100vh;
