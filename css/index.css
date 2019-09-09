@@ -29,11 +29,11 @@ html::before {
 @font-face {
   font-family: "yonkyblack";
   src: url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black-webfont.woff2)
-      format("woff2") /* Super Modern Browsers */,
+      format("woff2"),
     url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black-webfont.woff)
-      format("woff") /* Pretty Modern Browsers */,
+      format("woff"),
     url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black.ttf)
-      format("truetype") /* Safari, Android, iOS */;
+      format("truetype");
   font-weight: normal;
   font-style: normal;
   unicode-range: U+0020-007F;
@@ -99,7 +99,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: 2px solid currentColor;
-  padding-bottom: 5px;
+  padding-bottom: 0.75em;
   outline: none;
   cursor: pointer;
   margin-right: 2em;
@@ -164,7 +164,7 @@ a:focus {
 
 .section {
   border: 2px var(--hero1) solid;
-  padding: 5%;
+  padding: 5% 5% 8% 5%;
   margin-top: 6em;
 }
 
@@ -185,12 +185,12 @@ footer {
 }
 
 .project-1-left {
-  min-height: 500px;
-  min-width: 500px;
+  min-height: 450px;
+  min-width: 450px;
   background-image: url(https://raw.githubusercontent.com/annarosz/portfolio/master/fb_illustration_square.gif);
   background-size: cover;
   background-position: center;
-  margin-right: 30px;
+  margin-right: 2em;
 }
 
 /* Media queries –––––––––––––––––––––––––––––––––––– */
@@ -201,13 +201,16 @@ footer {
   }
 
   .project-1-left {
-    height: 230px;
-    width: 100%;
+    min-height: 400px;
   }
 
   .project-1-right {
-    padding-top: 20px;
+    padding-top: 2em;
     width: 100%;
+  }
+
+  .section {
+    padding: 5% 5% 10% 5%;
   }
 }
 
@@ -215,9 +218,13 @@ footer {
   .main {
     margin: 40px 10%;
   }
+
+  .project-1-left {
+    min-height: 350px;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   h1 {
     padding-top: 1em;
     font-size: 5em;
@@ -257,7 +264,7 @@ footer {
   }
 
   footer {
-    padding-top: 4em;
-    padding-bottom: 1em;
+    padding-top: 2em;
+    padding-bottom: 0em;
   }
 }
