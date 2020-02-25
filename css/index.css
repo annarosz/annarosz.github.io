@@ -147,15 +147,11 @@ a:focus {
 
 .main {
   max-width: 1500px;
-  margin: 5em 20%;
-}
-
-.intro-section {
-  min-height: 65vh;
+  margin: 4em 20%;
 }
 
 .button-container {
-  display: flex;
+  display: none;
 }
 
 .button-spacer {
@@ -164,8 +160,6 @@ a:focus {
 }
 
 .section {
-  border: 2px var(--hero1) solid;
-  padding: 5% 5% 8% 5%;
   margin-top: 6em;
 }
 
@@ -180,62 +174,56 @@ footer {
 /* projects –––––––––––––––––––––––––––––––––––– */
 
 .project {
-  min-height: 280px;
   display: flex;
   flex-direction: row;
 }
 
 .project-1-left {
-  min-height: 450px;
-  min-width: 450px;
+  min-height: 400px;
+  min-width: 400px;
   background-image: url(https://raw.githubusercontent.com/annarosz/portfolio/master/fb_illustration_square.gif);
   background-size: cover;
   background-position: center;
-  margin-right: 2em;
+  margin-right: 3em;
 }
 
 /* Media queries –––––––––––––––––––––––––––––––––––– */
 
-@media only screen and (max-width: 1400px) {
-  .project-1-left {
-    min-height: 380px;
-    min-width: 60%;
+@media only screen and (max-width: 1100px) {
+  .button-container {
+    display: flex;
   }
-}
 
-@media only screen and (max-width: 1200px) {
+  .main {
+    margin: 5em 10%;
+  }
+
   .project {
     flex-direction: column;
   }
 
   .project-1-left {
-    min-height: 400px;
-    min-width: 300px;
-    margin-right: 0em;
+    min-height: 350px;
+    max-width: 350px;
   }
 
   .project-1-right {
     padding-top: 2em;
     min-width: 100%;
   }
-
-  .section {
-    padding: 5% 5% 10% 5%;
-  }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
   .main {
     margin: 40px 10%;
   }
 
   .project-1-left {
-    min-height: 400px;
-    min-width: 300px;
+    min-height: 350px;
+    max-width: 350px;
+    margin-right: 0px;
   }
-}
 
-@media only screen and (max-width: 500px) {
   h1 {
     padding-top: 1em;
     font-size: 5em;
@@ -246,11 +234,9 @@ footer {
     letter-spacing: 0em;
     padding-bottom: 0.75em;
   }
+}
 
-  h3 {
-    font-size: 1.3em;
-  }
-
+@media only screen and (max-width: 500px) {
   .floating-container {
     margin: 1em;
   }
@@ -267,15 +253,28 @@ footer {
 
   .project-1-left {
     min-height: 300px;
-    min-width: 200px;
+    min-width: 300px;
+    margin-right: 0px;
   }
 
   .button-spacer {
     margin-top: 1em;
   }
 
+  h3 {
+    font-size: 1.4em;
+  }
+
   footer {
     padding-top: 5em;
     padding-bottom: 0em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .project-1-left {
+    min-height: 250px;
+    min-width: 250px;
+    margin-right: 0px;
   }
 }
