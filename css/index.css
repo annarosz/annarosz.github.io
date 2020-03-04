@@ -181,7 +181,7 @@ footer {
 .project-1-left {
   min-height: 400px;
   min-width: 400px;
-  background-image: url(https://raw.githubusercontent.com/annarosz/portfolio/master/fb_illustration_square.gif);
+  background-image: url(https://raw.githubusercontent.com/annarosz/annarosz.github.io/master/FB_mockup.gif);
   background-size: cover;
   background-position: center;
   margin-right: 3em;
@@ -203,8 +203,9 @@ footer {
   }
 
   .project-1-left {
-    min-height: 350px;
-    max-width: 350px;
+    min-height: 400px;
+    max-width: 400px;
+    margin-right: 0px;
   }
 
   .project-1-right {
@@ -216,12 +217,6 @@ footer {
 @media only screen and (max-width: 750px) {
   .main {
     margin: 40px 10%;
-  }
-
-  .project-1-left {
-    min-height: 350px;
-    max-width: 350px;
-    margin-right: 0px;
   }
 
   h1 {
@@ -252,9 +247,7 @@ footer {
   }
 
   .project-1-left {
-    min-height: 300px;
-    min-width: 300px;
-    margin-right: 0px;
+    min-width: 280px;
   }
 
   .button-spacer {
@@ -273,8 +266,6 @@ footer {
 
 @media only screen and (max-width: 350px) {
   .project-1-left {
-    min-height: 250px;
     min-width: 250px;
-    margin-right: 0px;
   }
 }
