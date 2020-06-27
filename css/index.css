@@ -5,6 +5,7 @@
 
 body {
   animation: colorChange 15s infinite alternate;
+  overflow: hidden;
 }
 
 @keyframes colorChange {
