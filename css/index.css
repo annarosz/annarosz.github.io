@@ -3,11 +3,7 @@
   box-sizing: border-box;
 }
 
-.container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+body {
   animation: colorChange 15s infinite alternate;
 }
 
@@ -27,6 +23,7 @@
   height: 90vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   animation: fadeInText ease 3s;
 }
 
@@ -39,8 +36,8 @@
    } 
 } 
 
-h2 {
-  font-family: 'Muli', sans-serif;
+h1 {
+  font-family: 'Raleway', sans-serif;
   color: white;
   font-size: 3em;
   text-align: center;
