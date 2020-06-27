@@ -3,269 +3,45 @@
   box-sizing: border-box;
 }
 
-:root {
-  --hero1: #a39ebf;
-  --hero2: rgb(255, 165, 0);
+.container {
+  animation: animate 15s infinite alternate;
 }
 
-html::before {
-  content: " ";
-  display: block;
-  background: linear-gradient(rgba(216, 204, 192), rgb(109, 118, 190));
-  background-position: center;
-  background-size: cover;
+@keyframes animate {
+  0% {
+    background-color: #FFA100;
+  }
+  50% {
+    background-color: #F16EA5;
+  }
+  100% {
+    background-color: #FF6C3E;
+  }
+}
+
+.intro {
   height: 100vh;
   width: 100vw;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: fixed;
-  z-index: -10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInAnimation ease 3s;
 }
 
-/* Type styles –––––––––––––––––––––––––––––––––––– */
-
-@font-face {
-  font-family: "yonkyblack";
-  src: url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black-webfont.woff2)
-      format("woff2"),
-    url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black-webfont.woff)
-      format("woff"),
-    url(https://raw.githubusercontent.com/annarosz/portfolio/master/yonky-black.ttf)
-      format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  unicode-range: U+0020-007F;
-}
-
-h1 {
-  font-family: "yonkyblack", sans-serif;
-  color: var(--hero2);
-  font-size: 6.5em;
-  padding-top: 1.5em;
-  padding-bottom: 0.75em;
-}
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+} 
 
 h2 {
-  font-family: "yonkyblack", sans-serif;
-  color: var(--hero1);
-  font-weight: 900;
-  font-size: 4em;
-  letter-spacing: 0.01em;
-  padding-bottom: 1em;
-}
-
-h3 {
-  color: black;
-  font-family: "Noto Serif JP", serif;
-  font-weight: 400;
-  font-size: 1.7em;
-  padding-bottom: 1em;
-}
-
-h4 {
-  color: black;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 1.4em;
-  line-height: 1.5em;
-  padding-bottom: 1em;
-}
-
-p {
-  color: black;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.3em;
-  padding-bottom: 1em;
-}
-
-.bold {
-  font-weight: 700;
-  line-height: 0em;
-  margin-top: 0.5em;
-}
-
-/* Link styles –––––––––––––––––––––––––––––––––––– */
-
-a {
-  color: black;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 0.8em;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-bottom: 2px solid currentColor;
-  padding-bottom: 0.75em;
-  outline: none;
-  cursor: pointer;
-  margin-right: 2em;
-}
-
-a:hover,
-a:active,
-a:focus {
-  color: var(--hero2);
-  transition: color 50ms ease-in-out;
-  border-bottom: 2px dashed currentColor;
-}
-
-.icon {
-  border-bottom: none;
-  padding-bottom: none;
-  font-size: 2em;
-  margin-left: 1em;
-  padding-bottom: 1em;
-  margin-right: 0em;
-}
-
-.icon:hover,
-.icon:active,
-.icon:focus {
-  border-bottom: none;
-}
-
-/* containers –––––––––––––––––––––––––––––––––––– */
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.floating-container {
-  background-color: white;
-  margin: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 2000px;
-}
-
-.main {
-  max-width: 1500px;
-  margin: 4em 20%;
-}
-
-.button-container {
-  display: none;
-}
-
-.button-spacer {
-  margin-top: 2em;
-  display: flex;
-}
-
-.section {
-  margin-top: 6em;
-}
-
-footer {
-  padding-top: 6em;
-  padding-bottom: 2em;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-/* projects –––––––––––––––––––––––––––––––––––– */
-
-.project {
-  display: flex;
-  flex-direction: row;
-}
-
-.project-1-left {
-  min-height: 400px;
-  min-width: 400px;
-  background-image: url(https://raw.githubusercontent.com/annarosz/annarosz.github.io/master/FB_mockup.gif);
-  background-size: cover;
-  background-position: center;
-  margin-right: 3em;
-}
-
-/* Media queries –––––––––––––––––––––––––––––––––––– */
-
-@media only screen and (max-width: 1100px) {
-  .button-container {
-    display: flex;
-  }
-
-  .main {
-    margin: 5em 10%;
-  }
-
-  .project {
-    flex-direction: column;
-  }
-
-  .project-1-left {
-    min-height: 400px;
-    max-width: 400px;
-    margin-right: 0px;
-  }
-
-  .project-1-right {
-    padding-top: 2em;
-    min-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .main {
-    margin: 40px 10%;
-  }
-
-  h1 {
-    padding-top: 1em;
-    font-size: 5em;
-  }
-
-  h2 {
-    font-size: 3.3em;
-    letter-spacing: 0em;
-    padding-bottom: 0.75em;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .floating-container {
-    margin: 1em;
-  }
-
-  .main {
-    margin: 2em 1.5em;
-  }
-
-  .section {
-    border: none;
-    padding: 0em;
-    margin-top: 5em;
-  }
-
-  .project-1-left {
-    min-width: 280px;
-  }
-
-  .button-spacer {
-    margin-top: 1em;
-  }
-
-  h3 {
-    font-size: 1.4em;
-  }
-
-  footer {
-    padding-top: 5em;
-    padding-bottom: 0em;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .project-1-left {
-    min-width: 250px;
-  }
+  font-family: 'Muli', sans-serif;
+  color: white;
+  font-size: 3em;
+  transition: opacity 2s ease-in;
+  text-align: center;
+  padding: 2em;
 }
