@@ -67,7 +67,7 @@ h1 {
 } */
 
 p {
-  color: darkgreen;
+  color: purple;
   /* font-family: 'Inter', sans-serif; */
   font-family: 'Chivo', sans-serif;
   font-size: 1.5em;
@@ -94,13 +94,13 @@ p {
       }
 }
 
-/* @media only screen and (max-width: 550px) {
+@media only screen and (max-width: 550px) {
   .container-projects {
     grid-template-columns: 1fr;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
   }
-} */
+}
 
 .projects-card {
   height: 100%;
