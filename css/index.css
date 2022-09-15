@@ -104,9 +104,27 @@ p {
 
 .projects-card {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 550px) {
+  .projects-card {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border: solid red 2px;
+  }
 }
 
 .projects-card img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 550px) {
+  .projects-card img {
+    max-width: 150px;
+    height: auto;
+  }
 }
