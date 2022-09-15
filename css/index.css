@@ -16,7 +16,7 @@ body {
    width: 100%;
    margin: 40px auto;
    margin-bottom: 400px;
-   /* border: white solid 2px; */
+   border: white solid 2px;
  }
 
  .change:nth-child(4) { 
