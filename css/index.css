@@ -67,7 +67,7 @@ h1 {
 } */
 
 p {
-  color: blue;
+  color: darkgreen;
   /* font-family: 'Inter', sans-serif; */
   font-family: 'Chivo', sans-serif;
   font-size: 1.5em;
@@ -78,7 +78,7 @@ p {
 
 /* ––––––––– GALLERY GRID ––––––––– */
 
-/* .container-projects {
+.container-projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 56px;
@@ -94,13 +94,13 @@ p {
       }
 }
 
-@media only screen and (max-width: 550px) {
+/* @media only screen and (max-width: 550px) {
   .container-projects {
     grid-template-columns: 1fr;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
   }
-}
+} */
 
 .projects-card {
   height: 100%;
@@ -109,4 +109,4 @@ p {
 .projects-card img {
   width: 100%;
   height: auto;
-} */
+}
