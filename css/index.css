@@ -12,10 +12,10 @@ body {
  }
  
  .change {
-   min-height: 80vh;
+   /* min-height: 80vh; */
    width: 100%;
    margin: 40px auto;
-   margin-bottom: 400px;
+   margin-bottom: 600px;
    border: white solid 2px;
  }
 
