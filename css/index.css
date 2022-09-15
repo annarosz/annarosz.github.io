@@ -8,7 +8,7 @@ background-color: purple;
 }
 
 body {
-  transition: 1s background-color;
+  transition: .7s background-color;
  }
  
  .change {
@@ -78,7 +78,7 @@ p {
 
 /* ––––––––– GALLERY GRID ––––––––– */
 
-.container-projects {
+/* .container-projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 56px;
@@ -103,11 +103,10 @@ p {
 }
 
 .projects-card {
-  /* background-color: white; */
   height: 100%;
 }
 
 .projects-card img {
   width: 100%;
   height: auto;
-}
+} */
