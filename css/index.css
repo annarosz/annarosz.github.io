@@ -4,7 +4,7 @@
 }
 
 body {
-background-color: #fff59d;
+background-color: purple;
 }
 
 body {
@@ -36,7 +36,6 @@ body {
   }
 }
 
-
 .header {
   /* background-color: yellow; */
   display: flex;
@@ -50,6 +49,7 @@ h1 {
   color: purple;
   font-size: 4em;
   font-weight: 400;
+  margin: 24px 0px 24px 0px
   /* padding-bottom: 0.75em; */
 }
 
@@ -59,12 +59,19 @@ h1 {
   }
 }
 
+h6 {
+  font-family: 'Chivo', sans-serif;
+  color: purple;
+  font-weight: 400;
+  font-size: 1em;
+}
+
 p {
   color: purple;
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
-  /* line-height: 1.3em; */
+  line-height: 1.3em;
   /* padding-bottom: 1em; */
 }
 
@@ -86,7 +93,7 @@ p {
       }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 550px) {
   .container-projects {
     grid-template-columns: 1fr;
     grid-column-gap: 24px;
