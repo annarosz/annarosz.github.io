@@ -25,9 +25,32 @@ body {
   padding: 0px 56px 0px 56px;
 }
 
+@media only screen and (max-width: 650px) {
+  .container {
+    padding: 0px 24px 0px 24px;
+  }
+}
+
 
 .header {
   /* background-color: yellow; */
   display: flex;
   align-items: center;
 }
+
+/* ––––––––––––––– TYPOGRAPHY ––––––––––––––– */
+
+h1 {
+  font-family: 'Chivo', sans-serif;
+  color: black;
+  font-size: 4em;
+  font-weight: 400;
+  /* padding-bottom: 0.75em; */
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
