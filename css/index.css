@@ -4,7 +4,7 @@
 }
 
 body {
-background-color: purple;
+background-color:#fff59d;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
  }
  
  .change {
-   min-height: 200px;
+   min-height: 300px;
    /* margin-top: 40px auto; */
    border: white solid 2px;
    padding: 0px 0px 80px 0px;
@@ -23,11 +23,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
 }
 
  .section-body {
   border: red solid 1px;
+  margin-bottom: 400px;
  }
 
  /* .change:nth-child(4) { 
