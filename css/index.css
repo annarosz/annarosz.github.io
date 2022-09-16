@@ -8,21 +8,29 @@ background-color: purple;
 }
 
 body {
-  transition: .7s background-color;
+  transition: .5s background-color;
  }
  
  .change {
-   /* min-height: 80vh; */
-   width: 100%;
-   margin: 40px auto;
-   margin-bottom: 600px;
+   min-height: 500px;
+   /* margin: 40px auto; */
    border: white solid 2px;
  }
 
- .change:nth-child(4) { 
-  margin-top: red solid 5px;
-  /* min-height: 60vh; */
+ .header {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+}
+
+ .section-body {
+  border: red solid 1px;
  }
+
+ /* .change:nth-child(4) { 
+  margin-top: red solid 5px;
+ } */
 
  .container {
   max-width: 1050px;
@@ -36,10 +44,14 @@ body {
   }
 }
 
-.header {
-  /* background-color: yellow; */
-  display: flex;
-  align-items: center;
+.nav {
+  position: sticky;
+  top: 20px;
+  left: 20px;
+  background-color: purple;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 /* ––––––––––––––– TYPOGRAPHY ––––––––––––––– */
@@ -59,12 +71,12 @@ h1 {
   }
 }
 
-/* h6 {
+h6 {
   font-family: 'Chivo', sans-serif;
   color: purple;
   font-weight: 400;
   font-size: 1em;
-} */
+}
 
 p {
   color: purple;
@@ -108,13 +120,13 @@ p {
   flex-direction: column;
 }
 
-@media only screen and (max-width: 550px) {
+/* @media only screen and (max-width: 550px) {
   .projects-card {
     height: 100%;
     display: flex;
     flex-direction: row;
   }
-}
+} */
 
 .projects-card img {
   width: 100%;
