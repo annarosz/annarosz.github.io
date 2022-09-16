@@ -26,13 +26,13 @@ body {
 }
 
 .spacer {
-  min-height: 300px;
+  min-height: 260px;
   /* border: solid green 1px; */
 }
 
 @media only screen and (max-width: 650px) {
   .spacer{
-    min-height: 200px;
+    min-height: 180px;
   }
 }
 
