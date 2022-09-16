@@ -15,7 +15,7 @@ body {
    min-height: 100px;
    /* margin-top: 40px auto; */
    border: white solid 2px;
-   padding: 40px 0px 40px 0px;
+   padding: 120px 0px 40px 0px;
  }
 
  .header {
@@ -24,12 +24,16 @@ body {
   flex-direction: column;
   align-items: center;
   height: 90vh;
-  margin-bottom: 120px;
+  margin-bottom: 300px;
+}
+
+.spacer {
+  min-height: 400px;
+  border: solid green 1px;
 }
 
  .section-body {
   border: red solid 1px;
-  margin-bottom: 400px;
  }
 
  /* .change:nth-child(4) { 
