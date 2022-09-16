@@ -12,7 +12,7 @@ body {
  }
  
  .change {
-   min-height: 500px;
+   min-height: 200px;
    /* margin: 40px auto; */
    border: white solid 2px;
  }
@@ -20,12 +20,14 @@ body {
  .header {
   background-color: yellow;
   display: flex;
+  flex-direction: column;
   align-items: center;
   height: 80vh;
 }
 
  .section-body {
   border: red solid 1px;
+  margin-bottom: 400px;
  }
 
  /* .change:nth-child(4) { 
@@ -49,8 +51,8 @@ body {
   top: 20px;
   left: 20px;
   background-color: purple;
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
