@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+background-color:#fff59d;
+}
+
+body {
+  transition: .5s background-color;
+ }
+ 
+ .change {
+   min-height: 100px;
+   /* margin-top: 40px auto; */
+   /* border: white solid 2px; */
+   padding: 80px 0px 80px 0px;
+ }
+
+ .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.spacer {
+  min-height: 260px;
+  /* border: solid green 1px; */
+}
+
+@media only screen and (max-width: 650px) {
+  .spacer{
+    min-height: 180px;
+  }
+}
+
+ /* .section-body {
+  border: red solid 1px;
+ } */
+
+ /* .change:nth-child(4) { 
+  margin-top: red solid 5px;
+ } */
+
+ .container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0px 56px 0px 56px;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    padding: 0px 24px 0px 24px;
+  }
+}
+
+.nav {
+  position: sticky;
+  top: 20px;
+  left: 20px;
+  background-color: purple;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  margin-top: 400px;
+}
+
+/* ––––––––––––––– TYPOGRAPHY ––––––––––––––– */
+
+h1 {
+  font-family: 'Chivo', sans-serif;
+  color: green;
+  font-size: 4em;
+  font-weight: 400;
+  margin: 24px 0px 24px 0px
+  /* padding-bottom: 0.75em; */
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+h6 {
+  font-family: 'Chivo', sans-serif;
+  color: purple;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+p {
+  color: purple;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.3em;
+  /* padding-bottom: 1em; */
+}
+
+/* ––––––––– GALLERY GRID ––––––––– */
+
+.container-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 56px;
+  grid-row-gap: 56px;
+}
+
+@media only screen and (max-width: 950px) {
+  .container-projects {
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+      }
+}
+
+@media only screen and (max-width: 550px) {
+  .container-projects {
+    grid-template-columns: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+  }
+}
+
+.projects-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* @media only screen and (max-width: 550px) {
+  .projects-card {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+} */
+
+.projects-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* @media only screen and (max-width: 550px) {
+  .projects-card img {
+    width: 50%;
+    height: auto;
+  }
+} */
