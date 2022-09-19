@@ -1,0 +1,4 @@
+AuthType Basic  
+AuthName "restricted area"  
+AuthUserFile projects_5.html.htpasswd  
+require valid-user
