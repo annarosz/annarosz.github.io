@@ -27,9 +27,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 75vh;
-  margin-top: 10vh;
-  margin-bottom: 15vh;
+  min-height: 70vh;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
   /* background-color: gold; */
 }
 
@@ -207,6 +207,18 @@ a:hover {
   z-index: 1;
 }
 
+.nav:hover {
+  background-color: black;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.nav img {
+  color: red !important;
+  fill: green !important; 
+
+}
+
 @media only screen and (max-width: 650px) {
   .nav {
     top: 24px;
@@ -217,6 +229,11 @@ a:hover {
 .nav a {
   color: white;
 }
+
+.nav a:hover {
+  color: black;
+}
+
 
 
 /* ––––––––––––– */
