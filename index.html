@@ -1,240 +1,299 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="robots" content="noindex,nofollow">
-    <title>arosz</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Password Protected Page</title>
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #dialogText {
+            color: white;
+            background-color: #333333;
+        }
+        
+        #dialogWrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: table;
+            background-color: #EEEEEE;
+        }
+        
+        #dialogWrapCell {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        #mainDialog {
+            max-width: 400px;
+            margin: 5px;
+            border: solid #AAAAAA 1px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 3px #AAAAAA;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            text-align: left;
+        }
+        #mainDialog > * {
+            padding: 10px 30px;
+        }
+        #passArea {
+            padding: 20px 30px;
+            background-color: white;
+        }
+        #passArea > * {
+            margin: 5px auto;
+        }
+        #pass {
+            width: 100%;
+            height: 40px;
+            font-size: 30px;
+        }
+        
+        #messageWrapper {
+            float: left;
+            vertical-align: middle;
+            line-height: 30px;
+        }
+        
+        .notifyText {
+            display: none;
+        }
+        
+        #invalidPass {
+            color: red;
+        }
+        
+        #success {
+            color: green;
+        }
+        
+        #submitPass {
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: #E7E7E7;
+            border: solid gray 1px;
+            float: right;
+            cursor: pointer;
+        }
+        #contentFrame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #attribution {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+        #attribution, #attribution a {
+            color: #999;
+        }
+        .error {
+            display: none;
+            color: red;
+        }
+    </style>
   </head>
-
-<body>
-
-  <a href="index.html">
-    <div class="wrapper">
-      <div id="reload" class="circle">
-          <svg fill="none" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-            <path d="m40 80c22.091 0 40-17.909 40-40s-17.909-40-40-40-40 17.909-40 40 17.909 40 40 40zm23-51.706-0.4701 0.2677-19.698 11.398 20.056 11.844-1.4326 2.4536-19.989-11.8v22.484h-2.8652v-22.529l-20.168 11.666-1.4326-2.4313 0.4925-0.29 19.698-11.398-20.079-11.844 1.4774-2.4314 0.2686 0.1562 19.698 11.621v-22.462h2.8876v22.484l20.124-11.644 1.4326 2.4536z" clip-rule="evenodd" fill-rule="evenodd"/>
-            </svg>
-      </div>
-    </div>
-  </a>  
-
-  <div class="container fade-in">
-
-    <div class="change header" data-color="BlanchedAlmond">
-    <!-- <div class="change header" data-color="#EBE7B9"> -->
-
-      <div>
-        <h1>Anna Roszko</h1>
-          <h1>Multidisciplinary designer – brand, design&nbsp;&&nbsp;code</h1>
-          <div class="a-underline">
-            <h2>Say hi via <a href="mailto:roszko.anna@gmail.com">email</a> or&nbsp;<a target="_blank" href="https://www.linkedin.com/in/anna-roszko-40807450/">linkedin</a>
-            </h2>
-          </div>
-      </div >  
-      <div style="display: flex; justify-content: flex-end;" class="material-symbols-outlined">south</div>
-    </div>
-    
-    <div class="spacer"></div>
-  
-    <div>
-      <h1>Recent projects</h1>
-    </div>
-
-    <div class="spacer-small change" data-color="#FCF8EA"></div>
-
-    <section id="home-accordian-projects">
-      <div class="accordian">
-        <div class="accordian-header">
-          <button>
-            <h2>Sunified – Brand&nbsp;refresh</h2>
-            <div class="open"><span class="material-symbols-outlined">add</span></div>
-            <div class="close"><span class="material-symbols-outlined">remove</span></div>
-          </button>
-        </div>
-        <div class="accordian-body fade-in">
-          <div class="grid-2-col">
-            <div class="grid-image">
-              <img src="assets/AR_tile_P1.png">
+  <body>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    <div id="dialogWrap">
+        <div id="dialogWrapCell">
+            <div id="mainDialog">
+                <div id="dialogText">This page is password protected.</div>
+                <div id="passArea">
+                    <p id="passwordPrompt">Password</p>
+                    <input id="pass" type="password" name="pass" autofocus>
+                    <div>
+                        <span id="messageWrapper">
+                            <span id="invalidPass" class="error">Sorry, please try again.</span>
+                            <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
+                            <span id="success" class="notifyText">Success!</span>
+                            &nbsp;
+                        </span>
+                        <button id="submitPass" type="button">Submit</button>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+                <div id="securecontext" class="error">
+                    <p>
+                        Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
+                    </p>
+                </div>
+                <div id="nocrypto" class="error">
+                    <p>
+                        Your web browser appears to be outdated. Please visit this page using a modern browser.
+                    </p>
+                </div>
             </div>
-            <div class="grid-text">
-              <p>An updated brand identity for a technology startup with a suite of solutions for the solar energy industry.</p>
-              <a href="p1.html">View more</a>
-            </div> 
-          </div>  
         </div>
-      </div>
-
-      <div class="accordian">
-        <div class="accordian-header">
-          <button>
-            <h2>Sunified – Visual&nbsp;narratives</h2>
-            <div class="open"><span class="material-symbols-outlined">add</span></div>
-            <div class="close"><span class="material-symbols-outlined">remove</span></div>
-          </button>
-        </div>
-        <div class="accordian-body fade-in">
-          <div class="grid-2-col">
-            <div class="grid-image">
-              <img src="assets/AR_tile_P2.png">
-            </div>
-            <div class="grid-text">
-              <p>Secondary visual systems to support Sunified's core brand identity and communicate their complex narrative.</p>
-              <a href="p2.html">View more</a>
-            </div> 
-          </div>  
-        </div>
-      </div>
-
-      <div class="accordian">
-        <div class="accordian-header">
-          <button>
-            <h2>Sunified – Pitch&nbsp;decks</h2>
-            <div class="open"><span class="material-symbols-outlined">add</span></div>
-            <div class="close"><span class="material-symbols-outlined">remove</span></div>
-          </button>
-        </div>
-        <div class="accordian-body fade-in">
-          <div class="grid-2-col">
-            <div class="grid-image">
-              <img src="assets/AR_tile_P3.png">
-            </div>
-            <div class="grid-text">
-              <p>An application of the Sunified brand identity, presentation decks for fundraising, investor relations, sales, events and internal documents.</p>
-              <a href="p3.html">View more</a>
-            </div> 
-          </div>  
-        </div>
-      </div>
-
-      <div class="accordian">
-        <div class="accordian-header">
-          <button>
-            <h2>Sunified – MVP Website</h2>
-            <div class="open"><span class="material-symbols-outlined">add</span></div>
-            <div class="close"><span class="material-symbols-outlined">remove</span></div>
-          </button>
-        </div>
-        <div class="accordian-body fade-in">
-          <div class="grid-2-col">
-            <div class="grid-image">
-              <img src="assets/AR_tile_P4.png">
-            </div>
-            <div class="grid-text">
-              <p>A website redesign to accommodate a wide range of products, solutions, projects, and users.</p>
-              <a href="p4.html">View more</a>
-            </div> 
-          </div>  
-        </div>
-      </div>
-
-      <div class="accordian">
-        <div class="accordian-header">
-          <button>
-            <h2>Takeawei – Website&nbsp;refresh</h2>
-            <div class="open"><span class="material-symbols-outlined">add</span></div>
-            <div class="close"><span class="material-symbols-outlined">remove</span></div>
-          </button>
-        </div>
-        <div class="accordian-body fade-in">
-          <div class="grid-2-col">
-            <div class="grid-image">
-              <img src="assets/AR_tile_P5.png">
-            </div>
-            <div class="grid-text">
-              <p>An elevated e-commerce experience for a popular ceramics studio and lifestyle brand.</p>
-              <a href="p5.html">View more</a>
-            </div> 
-          </div>  
-        </div>
-      </div>
-    </section>
-
-    <div class="spacer change" data-color="#FCF8EA"></div>
-
-    <div>
-      <h1>About me</h1>
     </div>
-
-    <div class="spacer-small"></div>
-
-    <div class="about-container">
-      <div class="about-container-image">
-        <img src="assets/Anna_colour_round.png">
-      </div>
-      <div class="about-container-text">
-        <h4>Hi, I'm Anna, a multidisciplinary designer with a passion for creative problem solving at the intersection of brand, design, and technology. I'm a hands&#8209;on maker and a system&#8209;level thinker with a focus on end&#8209;to&#8209;end delivery, from concept to implementation. I'm driven to create solutions that are meaningful and beautiful while always keeping business needs and usability at the forefront.</h4>
-      </div>
+    <div id="attribution">
+        Protected by <a href="https://www.maxlaumeister.com/pagecrypt/">PageCrypt</a>
     </div>
+    <script>
+    (function() {
 
-    <div class="spacer-small"></div>
+        var pl = "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";
+        
+        var submitPass = document.getElementById('submitPass');
+        var passEl = document.getElementById('pass');
+        var invalidPassEl = document.getElementById('invalidPass');
+        var trycatcherror = document.getElementById('trycatcherror');
+        var successEl = document.getElementById('success');
+        var contentFrame = document.getElementById('contentFrame');
+        
+        // Sanity checks
 
-    <div id="home-accordian-about">
-      <div class="accordian">
-        <div class="accordian-header">
-          <button>
-            <h2>Skills</h2>
-            <div class="open"><span class="material-symbols-outlined">expand_more</span></div>
-            <div class="close"><span class="material-symbols-outlined">expand_less</span></div>
-          </button>
-        </div>
-        <div class="accordian-body fade-in">
-          <div>
-            <p><strong>Brand strategy</strong></p>
-            <p>The insights and foundation for creative decision making.</p>
-          </div>
-          <div>
-            <p><strong>Art direction</strong></p>
-            <p>Synthesising insights to bring a concept to life.</p>
-          </div>
-          <div>
-            <p><strong>Digital design</strong></p>
-            <p>Communication and user experience design for current and emerging technologies.</p>
-          </div>
-          <div>
-            <p><strong>Design systems</strong></p>
-            <p>A consistent and interconnected design language and library.</p>
-          </div>
-          <div>
-            <p><strong>UI development</strong></p>
-            <p>Bringing design to life with code. Performance, usability, and accessibility.</p>
-          </div>
-          <div>
-            <p><strong>Design leadership</strong></p>
-            <p>Articulate the value behind design decisions to engage and educate.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        if (pl === "") {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
+            return;
+        }
 
+        if (!isSecureContext) {
+            document.querySelector("#passArea").style.display = "none";
+            document.querySelector("#securecontext").style.display = "block";
+            return;
+        }
 
-    <div class="spacer"></div>
+        if (!crypto.subtle) {
+            document.querySelector("#passArea").style.display = "none";
+            document.querySelector("#nocrypto").style.display = "block";
+            return;
+        }
+        
+        function str2ab(str) {
+            var ustr = atob(str);
+            var buf = new ArrayBuffer(ustr.length);
+            var bufView = new Uint8Array(buf);
+            for (var i=0, strLen=ustr.length; i < strLen; i++) {
+                bufView[i] = ustr.charCodeAt(i);
+            }
+            return bufView;
+        }
 
-    <div class="a-underline">
-      <h2>Say hi via <a href="mailto:roszko.anna@gmail.com">email</a> or&nbsp;<a target="_blank" href="https://www.linkedin.com/in/anna-roszko-40807450/">linkedin</a>
-      </h2>
-    </div>
- 
-    <div class="spacer-small"></div>
-    <div class="spacer-small"></div>
+        async function deriveKey(salt, password) {
+            const encoder = new TextEncoder()
+            const baseKey = await crypto.subtle.importKey(
+                'raw',
+                encoder.encode(password),
+                'PBKDF2',
+                false,
+                ['deriveKey'],
+            )
+            return await crypto.subtle.deriveKey(
+                { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
+                baseKey,
+                { name: 'AES-GCM', length: 256 },
+                true,
+                ['decrypt'],
+            )
+        }
+        
+        async function doSubmit(evt) {
+            submitPass.disabled = true;
+            passEl.disabled = true;
 
-    <section class="footer">
-        <small>I acknowledge Aboriginal & Torres Strait Islander peoples as the traditional custodians of country throughout Australia. My studio sits on the lands of the Wurundjeri people of the Kulin Nation and I pay my respects to their elders past, present, and emerging.</small>
-        <div style="margin-top:24px;">
-          <small>©2022 design and build by me  <img src="assets/icon_heart.svg"></small>
-        </div>
-    </section>
+            let iv, ciphertext, key;
+            
+            try {
+                var unencodedPl = str2ab(pl);
 
-  </div>
+                const salt = unencodedPl.slice(0, 32)
+                iv = unencodedPl.slice(32, 32 + 16)
+                ciphertext = unencodedPl.slice(32 + 16)
 
-    
-    <script src="main.js"></script>
+                key = await deriveKey(salt, passEl.value);
+            } catch (e) {
+                trycatcherror.style.display = "inline";
+                console.error(e);
+                return;
+            }
+
+            try {
+                const decryptedArray = new Uint8Array(
+                    await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
+                );
+
+                let decrypted = new TextDecoder().decode(decryptedArray);
+
+                if (decrypted === "") throw "No data returned";
+
+                const basestr = '<base href="." target="_top">';
+                const anchorfixstr = `
+                    <script>
+                        Array.from(document.links).forEach((anchor) => {
+                            const href = anchor.getAttribute("href");
+                            if (href.startsWith("#")) {
+                                anchor.addEventListener("click", function(e) {
+                                    e.preventDefault();
+                                    const targetId = this.getAttribute("href").substring(1);
+                                    const targetEl = document.getElementById(targetId);
+                                    targetEl.scrollIntoView();
+                                });
+                            }
+                        });
+                    <\/script>
+                `;
+                
+                // Set default iframe link targets to _top so all links break out of the iframe
+                if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
+                else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
+                else decrypted = basestr + decrypted;
+
+                // Fix fragment links
+                if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
+                else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
+                else decrypted = decrypted + anchorfixstr;
+                
+                contentFrame.srcdoc = decrypted;
+                
+                successEl.style.display = "inline";
+                setTimeout(function() {
+                    dialogWrap.style.display = "none";
+                }, 1000);
+            } catch (e) {
+                invalidPassEl.style.display = "inline";
+                passEl.value = "";
+                submitPass.disabled = false;
+                passEl.disabled = false;
+                console.error(e);
+                return;
+            }
+        }
+        
+        submitPass.onclick = doSubmit;
+        passEl.onkeypress = function(e){
+            if (!e) e = window.event;
+            var keyCode = e.keyCode || e.which;
+            invalidPassEl.style.display = "none";
+            if (keyCode == '13'){
+              // Enter pressed
+              doSubmit();
+              return false;
+            }
+        }
+    })();
+    </script>
   </body>
 </html>
