@@ -1,299 +1,240 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Password Protected Page</title>
-    <style>
-        html, body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        #dialogText {
-            color: white;
-            background-color: #333333;
-        }
-        
-        #dialogWrap {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: table;
-            background-color: #EEEEEE;
-        }
-        
-        #dialogWrapCell {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
-        }
-        
-        #mainDialog {
-            max-width: 400px;
-            margin: 5px;
-            border: solid #AAAAAA 1px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px #AAAAAA;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #FFFFFF;
-            overflow: hidden;
-            text-align: left;
-        }
-        #mainDialog > * {
-            padding: 10px 30px;
-        }
-        #passArea {
-            padding: 20px 30px;
-            background-color: white;
-        }
-        #passArea > * {
-            margin: 5px auto;
-        }
-        #pass {
-            width: 100%;
-            height: 40px;
-            font-size: 30px;
-        }
-        
-        #messageWrapper {
-            float: left;
-            vertical-align: middle;
-            line-height: 30px;
-        }
-        
-        .notifyText {
-            display: none;
-        }
-        
-        #invalidPass {
-            color: red;
-        }
-        
-        #success {
-            color: green;
-        }
-        
-        #submitPass {
-            font-size: 20px;
-            border-radius: 5px;
-            background-color: #E7E7E7;
-            border: solid gray 1px;
-            float: right;
-            cursor: pointer;
-        }
-        #contentFrame {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        #attribution {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            padding: 10px;
-            font-weight: bold;
-            font-size: 0.8em;
-        }
-        #attribution, #attribution a {
-            color: #999;
-        }
-        .error {
-            display: none;
-            color: red;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="noindex,nofollow">
+    <title>arosz</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
-  <body>
-    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
-    <div id="dialogWrap">
-        <div id="dialogWrapCell">
-            <div id="mainDialog">
-                <div id="dialogText">This page is password protected.</div>
-                <div id="passArea">
-                    <p id="passwordPrompt">Password</p>
-                    <input id="pass" type="password" name="pass" autofocus>
-                    <div>
-                        <span id="messageWrapper">
-                            <span id="invalidPass" class="error">Sorry, please try again.</span>
-                            <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
-                            <span id="success" class="notifyText">Success!</span>
-                            &nbsp;
-                        </span>
-                        <button id="submitPass" type="button">Submit</button>
-                        <div style="clear: both;"></div>
-                    </div>
-                </div>
-                <div id="securecontext" class="error">
-                    <p>
-                        Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
-                    </p>
-                </div>
-                <div id="nocrypto" class="error">
-                    <p>
-                        Your web browser appears to be outdated. Please visit this page using a modern browser.
-                    </p>
-                </div>
-            </div>
+
+<body>
+
+  <a href="index.html">
+    <div class="wrapper">
+      <div id="reload" class="circle">
+          <svg fill="none" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="m40 80c22.091 0 40-17.909 40-40s-17.909-40-40-40-40 17.909-40 40 17.909 40 40 40zm23-51.706-0.4701 0.2677-19.698 11.398 20.056 11.844-1.4326 2.4536-19.989-11.8v22.484h-2.8652v-22.529l-20.168 11.666-1.4326-2.4313 0.4925-0.29 19.698-11.398-20.079-11.844 1.4774-2.4314 0.2686 0.1562 19.698 11.621v-22.462h2.8876v22.484l20.124-11.644 1.4326 2.4536z" clip-rule="evenodd" fill-rule="evenodd"/>
+            </svg>
+      </div>
+    </div>
+  </a>  
+
+  <div class="container fade-in">
+
+    <div class="change header" data-color="BlanchedAlmond">
+    <!-- <div class="change header" data-color="#EBE7B9"> -->
+
+      <div>
+        <h1>Anna Roszko</h1>
+          <h1>Multidisciplinary designer – brand, design&nbsp;&&nbsp;code</h1>
+          <div class="a-underline">
+            <h2>Say hi via <a href="mailto:roszko.anna@gmail.com">email</a> or&nbsp;<a target="_blank" href="https://www.linkedin.com/in/anna-roszko-40807450/">linkedin</a>
+            </h2>
+          </div>
+      </div >  
+      <div style="display: flex; justify-content: flex-end;" class="material-symbols-outlined">south</div>
+    </div>
+    
+    <div class="spacer"></div>
+  
+    <div>
+      <h1>Recent projects</h1>
+    </div>
+
+    <div class="spacer-small change" data-color="#FCF8EA"></div>
+
+    <section id="home-accordian-projects">
+      <div class="accordian">
+        <div class="accordian-header">
+          <button>
+            <h2>Sunified – Brand&nbsp;refresh</h2>
+            <div class="open"><span class="material-symbols-outlined">add</span></div>
+            <div class="close"><span class="material-symbols-outlined">remove</span></div>
+          </button>
         </div>
+        <div class="accordian-body fade-in">
+          <div class="grid-2-col">
+            <div class="grid-image">
+              <img src="assets/AR_tile_P1.png">
+            </div>
+            <div class="grid-text">
+              <p>An updated brand identity for a technology startup with a suite of solutions for the solar energy industry.</p>
+              <a href="p1.html">View more</a>
+            </div> 
+          </div>  
+        </div>
+      </div>
+
+      <div class="accordian">
+        <div class="accordian-header">
+          <button>
+            <h2>Sunified – Visual&nbsp;narratives</h2>
+            <div class="open"><span class="material-symbols-outlined">add</span></div>
+            <div class="close"><span class="material-symbols-outlined">remove</span></div>
+          </button>
+        </div>
+        <div class="accordian-body fade-in">
+          <div class="grid-2-col">
+            <div class="grid-image">
+              <img src="assets/AR_tile_P2.png">
+            </div>
+            <div class="grid-text">
+              <p>Secondary visual systems to support Sunified's core brand identity and communicate their complex narrative.</p>
+              <a href="p2.html">View more</a>
+            </div> 
+          </div>  
+        </div>
+      </div>
+
+      <div class="accordian">
+        <div class="accordian-header">
+          <button>
+            <h2>Sunified – Pitch&nbsp;decks</h2>
+            <div class="open"><span class="material-symbols-outlined">add</span></div>
+            <div class="close"><span class="material-symbols-outlined">remove</span></div>
+          </button>
+        </div>
+        <div class="accordian-body fade-in">
+          <div class="grid-2-col">
+            <div class="grid-image">
+              <img src="assets/AR_tile_P3.png">
+            </div>
+            <div class="grid-text">
+              <p>An application of the Sunified brand identity, presentation decks for fundraising, investor relations, sales, events and internal documents.</p>
+              <a href="p3.html">View more</a>
+            </div> 
+          </div>  
+        </div>
+      </div>
+
+      <div class="accordian">
+        <div class="accordian-header">
+          <button>
+            <h2>Sunified – MVP Website</h2>
+            <div class="open"><span class="material-symbols-outlined">add</span></div>
+            <div class="close"><span class="material-symbols-outlined">remove</span></div>
+          </button>
+        </div>
+        <div class="accordian-body fade-in">
+          <div class="grid-2-col">
+            <div class="grid-image">
+              <img src="assets/AR_tile_P4.png">
+            </div>
+            <div class="grid-text">
+              <p>A website redesign to accommodate a wide range of products, solutions, projects, and users.</p>
+              <a href="p4.html">View more</a>
+            </div> 
+          </div>  
+        </div>
+      </div>
+
+      <div class="accordian">
+        <div class="accordian-header">
+          <button>
+            <h2>Takeawei – Website&nbsp;refresh</h2>
+            <div class="open"><span class="material-symbols-outlined">add</span></div>
+            <div class="close"><span class="material-symbols-outlined">remove</span></div>
+          </button>
+        </div>
+        <div class="accordian-body fade-in">
+          <div class="grid-2-col">
+            <div class="grid-image">
+              <img src="assets/AR_tile_P5.png">
+            </div>
+            <div class="grid-text">
+              <p>An elevated e-commerce experience for a popular ceramics studio and lifestyle brand.</p>
+              <a href="p5.html">View more</a>
+            </div> 
+          </div>  
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer change" data-color="#FCF8EA"></div>
+
+    <div>
+      <h1>About me</h1>
     </div>
-    <div id="attribution">
-        Protected by <a href="https://www.maxlaumeister.com/pagecrypt/">PageCrypt</a>
+
+    <div class="spacer-small"></div>
+
+    <div class="about-container">
+      <div class="about-container-image">
+        <img src="assets/Anna_colour_round.png">
+      </div>
+      <div class="about-container-text">
+        <h4>Hi, I'm Anna, a multidisciplinary designer with a passion for creative problem solving at the intersection of brand, design, and technology. I'm a hands&#8209;on maker and a system&#8209;level thinker with a focus on end&#8209;to&#8209;end delivery, from concept to implementation. I'm driven to create solutions that are meaningful and beautiful while always keeping business needs and usability at the forefront.</h4>
+      </div>
     </div>
-    <script>
-    (function() {
 
-        var pl = "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";
-        
-        var submitPass = document.getElementById('submitPass');
-        var passEl = document.getElementById('pass');
-        var invalidPassEl = document.getElementById('invalidPass');
-        var trycatcherror = document.getElementById('trycatcherror');
-        var successEl = document.getElementById('success');
-        var contentFrame = document.getElementById('contentFrame');
-        
-        // Sanity checks
+    <div class="spacer-small"></div>
 
-        if (pl === "") {
-            submitPass.disabled = true;
-            passEl.disabled = true;
-            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
-            return;
-        }
+    <div id="home-accordian-about">
+      <div class="accordian">
+        <div class="accordian-header">
+          <button>
+            <h2>Skills</h2>
+            <div class="open"><span class="material-symbols-outlined">expand_more</span></div>
+            <div class="close"><span class="material-symbols-outlined">expand_less</span></div>
+          </button>
+        </div>
+        <div class="accordian-body fade-in">
+          <div>
+            <p><strong>Brand strategy</strong></p>
+            <p>The insights and foundation for creative decision making.</p>
+          </div>
+          <div>
+            <p><strong>Art direction</strong></p>
+            <p>Synthesising insights to bring a concept to life.</p>
+          </div>
+          <div>
+            <p><strong>Digital design</strong></p>
+            <p>Communication and user experience design for current and emerging technologies.</p>
+          </div>
+          <div>
+            <p><strong>Design systems</strong></p>
+            <p>A consistent and interconnected design language and library.</p>
+          </div>
+          <div>
+            <p><strong>UI development</strong></p>
+            <p>Bringing design to life with code. Performance, usability, and accessibility.</p>
+          </div>
+          <div>
+            <p><strong>Design leadership</strong></p>
+            <p>Articulate the value behind design decisions to engage and educate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        if (!isSecureContext) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#securecontext").style.display = "block";
-            return;
-        }
 
-        if (!crypto.subtle) {
-            document.querySelector("#passArea").style.display = "none";
-            document.querySelector("#nocrypto").style.display = "block";
-            return;
-        }
-        
-        function str2ab(str) {
-            var ustr = atob(str);
-            var buf = new ArrayBuffer(ustr.length);
-            var bufView = new Uint8Array(buf);
-            for (var i=0, strLen=ustr.length; i < strLen; i++) {
-                bufView[i] = ustr.charCodeAt(i);
-            }
-            return bufView;
-        }
+    <div class="spacer"></div>
 
-        async function deriveKey(salt, password) {
-            const encoder = new TextEncoder()
-            const baseKey = await crypto.subtle.importKey(
-                'raw',
-                encoder.encode(password),
-                'PBKDF2',
-                false,
-                ['deriveKey'],
-            )
-            return await crypto.subtle.deriveKey(
-                { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
-                baseKey,
-                { name: 'AES-GCM', length: 256 },
-                true,
-                ['decrypt'],
-            )
-        }
-        
-        async function doSubmit(evt) {
-            submitPass.disabled = true;
-            passEl.disabled = true;
+    <div class="a-underline">
+      <h2>Say hi via <a href="mailto:roszko.anna@gmail.com">email</a> or&nbsp;<a target="_blank" href="https://www.linkedin.com/in/anna-roszko-40807450/">linkedin</a>
+      </h2>
+    </div>
+ 
+    <div class="spacer-small"></div>
+    <div class="spacer-small"></div>
 
-            let iv, ciphertext, key;
-            
-            try {
-                var unencodedPl = str2ab(pl);
+    <section class="footer">
+        <small>I acknowledge Aboriginal & Torres Strait Islander peoples as the traditional custodians of country throughout Australia. My studio sits on the lands of the Wurundjeri people of the Kulin Nation and I pay my respects to their elders past, present, and emerging.</small>
+        <div style="margin-top:24px;">
+          <small>©2022 design and build by me  <img src="assets/icon_heart.svg"></small>
+        </div>
+    </section>
 
-                const salt = unencodedPl.slice(0, 32)
-                iv = unencodedPl.slice(32, 32 + 16)
-                ciphertext = unencodedPl.slice(32 + 16)
+  </div>
 
-                key = await deriveKey(salt, passEl.value);
-            } catch (e) {
-                trycatcherror.style.display = "inline";
-                console.error(e);
-                return;
-            }
-
-            try {
-                const decryptedArray = new Uint8Array(
-                    await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
-                );
-
-                let decrypted = new TextDecoder().decode(decryptedArray);
-
-                if (decrypted === "") throw "No data returned";
-
-                const basestr = '<base href="." target="_top">';
-                const anchorfixstr = `
-                    <script>
-                        Array.from(document.links).forEach((anchor) => {
-                            const href = anchor.getAttribute("href");
-                            if (href.startsWith("#")) {
-                                anchor.addEventListener("click", function(e) {
-                                    e.preventDefault();
-                                    const targetId = this.getAttribute("href").substring(1);
-                                    const targetEl = document.getElementById(targetId);
-                                    targetEl.scrollIntoView();
-                                });
-                            }
-                        });
-                    <\/script>
-                `;
-                
-                // Set default iframe link targets to _top so all links break out of the iframe
-                if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
-                else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
-                else decrypted = basestr + decrypted;
-
-                // Fix fragment links
-                if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
-                else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
-                else decrypted = decrypted + anchorfixstr;
-                
-                contentFrame.srcdoc = decrypted;
-                
-                successEl.style.display = "inline";
-                setTimeout(function() {
-                    dialogWrap.style.display = "none";
-                }, 1000);
-            } catch (e) {
-                invalidPassEl.style.display = "inline";
-                passEl.value = "";
-                submitPass.disabled = false;
-                passEl.disabled = false;
-                console.error(e);
-                return;
-            }
-        }
-        
-        submitPass.onclick = doSubmit;
-        passEl.onkeypress = function(e){
-            if (!e) e = window.event;
-            var keyCode = e.keyCode || e.which;
-            invalidPassEl.style.display = "none";
-            if (keyCode == '13'){
-              // Enter pressed
-              doSubmit();
-              return false;
-            }
-        }
-    })();
-    </script>
+    
+    <script src="main.js"></script>
   </body>
 </html>
