@@ -8,7 +8,7 @@ const callback = (entries, observer) => {
 
 const changes = document.querySelectorAll('.change');
 
-const observer = new IntersectionObserver(callback, { threshold: .5 });
+const observer = new IntersectionObserver(callback, { threshold: .8 });
 
 changes.forEach(change => {
   observer.observe(change);
@@ -41,3 +41,11 @@ Array.from(sections).forEach(section => {
 
 // window.addEventListener("scroll", reveal);
 
+window.onscroll = function () {
+  scrollRotate();
+};
+
+function scrollRotate() {
+  let image = document.getElementById("reload");
+  image.style.transform = "rotate(" + window.pageYOffset/10 + "deg)";
+}
