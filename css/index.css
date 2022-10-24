@@ -35,9 +35,9 @@ body {
 
 @media only screen and (max-width: 650px) {
   .header {
-    padding-top: 70px;
-    padding-bottom: 40px;
-    min-height: 60vh;
+    min-height: 80vh;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
