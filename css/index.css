@@ -34,10 +34,10 @@ body {
 
 @media only screen and (max-width: 650px) {
   .header {
-    min-height: 75vh;
+    min-height: 70vh;
     padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 40px;
+    margin-top: 60px;
   }
 }
 
