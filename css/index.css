@@ -282,7 +282,6 @@ a:hover {
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 55px;
   grid-row-gap: 55px;
-  /* background-color: yellow;  */
 }
 
 @media only screen and (max-width: 800px) {
@@ -295,9 +294,14 @@ a:hover {
   align-self: center;
 }
 
+.about-container-image {
+  display: flex;
+  align-items: center;
+}
+
 .about-container-image img {
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 260px;
 }
 
 /* ––––––––––––– */
