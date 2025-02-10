@@ -363,6 +363,16 @@ h2 {
   padding: 0px;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
 h3 {
   font-family: 'Chivo', sans-serif;
   font-size: 1.5em;
