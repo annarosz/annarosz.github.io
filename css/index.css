@@ -492,7 +492,6 @@ ul {
     min-height: 50vh; 
   }
   .parallax-WH {
-    height: 50vh; 
-    background-size: contain;
+    min-height: 50vh; 
   }
 }
