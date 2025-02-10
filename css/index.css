@@ -483,15 +483,35 @@ ul {
 
 @media only screen and (max-width: 600px) {
   .parallax-MIM {
-    min-height: 50vh; 
+    min-height: 60vh;
+    width: auto;
+    /* border: solid red 1px; */
+    background-size: contain;
+    background-position: top;
+    background-image: url("../assets/HOME_MIM.jpg");
   }
   .parallax-SUN {
-    min-height: 50vh; 
+    min-height: 60vh;
+    width: auto;
+    /* border: solid red 1px; */
+    background-size: contain;
+    background-position: top;
+    background-image: url("../assets/HOME_SUN.jpg");
   }
   .parallax-TK {
-    min-height: 50vh; 
+    min-height: 60vh;
+    width: auto;
+    /* border: solid red 1px; */
+    background-size: contain;
+    background-position: top;
+    background-image: url("../assets/HOME_TK.jpg");
   }
   .parallax-WH {
-    min-height: 50vh; 
+    min-height: 60vh;
+    width: auto;
+    /* border: solid red 1px; */
+    background-size: contain;
+    background-position: top;
+    background-image: url("../assets/HOME_WH.jpg");
   }
 }
