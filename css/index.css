@@ -499,28 +499,28 @@ ul {
 
 @media only screen and (max-width: 600px) {
   .parallax-MIM {
-    min-height: 50vh;
+    min-height: 60vh;
     width: 100%;
     background-size: contain;
     background-position: center top;
     background-image: url("../assets/MIM_HEADER-MOBILE.jpg");
   }
   .parallax-SUN {
-    min-height: 50vh;
+    min-height: 60vh;
     width: 100%;
     background-size: contain;
     background-position: center top;
     background-image: url("../assets/SUN_HEADER-MOBILE.jpg");
   }
   .parallax-TK {
-    min-height: 50vh;
+    min-height: 60vh;
     width: 100%;
     background-size: contain;
     background-position: center top;
     background-image: url("../assets/TK_HEADER-MOBILE.jpg");
   }
   .parallax-WH {
-    min-height: 50vh;
+    min-height: 60vh;
     width: 100%;
     background-size: contain;
     background-position: center top;
