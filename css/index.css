@@ -59,8 +59,7 @@ a:hover {
 
 @media only screen and (max-width: 650px) {
   .case-study-btn {
-    bottom: 80px;
-    background-color: pink;
+    bottom: 120px;
   }
 }
 
@@ -109,7 +108,7 @@ a:hover {
 
 @media only screen and (max-width: 650px) {
   .container-slide {
-    height: 80vh;
+    height: 85vh;
   }
 }
 
